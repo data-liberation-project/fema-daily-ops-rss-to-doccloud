@@ -1,0 +1,50 @@
+title: RSS Document Fetcher
+description: >-
+  Given an RSS feed where each entry's <link> element points to a document, upload those documents to DocumentCloud.
+type: object
+properties:
+  feed:
+    title: RSS/Atom Feed
+    type: string
+    format: uri
+    description: The URL of the feed to start scraping
+  feed_name:
+    title: Feed Name
+    type: string
+    description: The name by which you'd like to refer to the feed (e.g., in notifications). 
+  project:
+    title: Project
+    type: string
+    description: >-
+      The DocumentCloud project title or ID of the project the documents should be uploaded to. If the project title does not exist, it will be created.
+  source:
+    title: Source
+    type: string
+    description: >-
+      A description or URL indicating the ultimate source of these documents.
+  access:
+    title: Access Level
+    type: string
+    default: private
+    enum:
+      - private
+      - organization
+      - public
+  notify:
+    title: Notify on new documents
+    type: boolean
+  slack_webhook:
+    title: Slack Webhook
+    type: string
+    format: uri
+    description: Enter a slack webhook to enable Slack notifications
+required:
+  - feed
+  - project
+  - access
+eventOptions:
+  name: feed
+  events:
+    - hourly
+    - daily
+    - weekly
