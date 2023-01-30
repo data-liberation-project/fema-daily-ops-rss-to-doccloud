@@ -13,9 +13,9 @@ This repository is forked from [`MuckRock/documentcloud-scraper-addon`](https://
 First, you'll need to have a verified MuckRock account. If you've ever uploaded documents to DocumentCloud before, you're already set. If not, [register a free account here](https://accounts.muckrock.com/accounts/signup/?intent=squarelet) and then [request verification](https://airtable.com/shrZrgdmuOwW0ZLPM).
 
 2) Create a DocumentCloud project for your documents
-Next, log in to DocumentCloud and create a new project to store the documents that this Add-On will upload documents to. 
+Next, log in to DocumentCloud and create a new project to store the documents that this Add-On will upload documents to. <br>
 ![An image of the project create button in DocumentCloud](https://user-images.githubusercontent.com/136939/159478474-53a770e5-a826-44f1-bb80-b1844bf4c263.png)
-Click on your newly created project on the left-hand side of the screen, and note the numbers to the right of its name — this is the project ID, in this example, 207354.
+Click on your newly created project on the left-hand side of the screen, and note the numbers to the right of its name — this is the project ID, in this example, 207354. <br>
 ![Screen Shot 2022-03-22 at 8 08 11 AM](https://user-images.githubusercontent.com/136939/159478630-c6cbcb24-308c-4b0e-a42c-f10cf2653836.png)
 
 
